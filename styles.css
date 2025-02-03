@@ -49,3 +49,16 @@ body {
     border-radius: 10px;
     margin-top: 20px;
   }
+.watermark {
+  position: relative;
+}
+
+.watermark-text Rama {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
