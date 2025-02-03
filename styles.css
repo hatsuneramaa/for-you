@@ -43,22 +43,3 @@ body {
     cursor: pointer;
   }
   
-  .gif_container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-.watermark {
-  position: relative;
-}
-
-.watermark-Rama {
-  position: absolute;
-  bottom: 100px;
-  right: 10px;
-  font-size: 18px;
-  color: #fff;
-  opacity: 0.5;
-  filter: alpha(opacity=80);
-}
