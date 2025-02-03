@@ -22,6 +22,23 @@ function handleNoClick() {
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
 }
 
+
 function handleYesClick() {
     window.location.href = "yes_page.html";
 }
+
+const restartBtns = document.querySelectorAll(".restart-btn")
+
+// restart button functionality
+restartBtns.forEach((button) => {
+  button.addEventListener("click", () => {
+    heartLoader.style.display = "inherit";
+    yesResultContainer.style.display = "none";
+    noResultContainer.style.display = "none";
+
+    const timeoutId = setTimeout(() => {
+      questionContainer.style.display = "inherit";
+      heartLoader.style.display = "none";
+    }, 3000);
+  });
+});
