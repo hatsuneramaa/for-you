@@ -53,12 +53,12 @@ body {
   position: relative;
 }
 
-.watermark-text Rama {
+.watermark-Rama {
   position: absolute;
-  bottom: 10px;
+  bottom: 100px;
   right: 10px;
   font-size: 18px;
   color: #fff;
   opacity: 0.5;
-  filter: alpha(opacity=50);
+  filter: alpha(opacity=80);
 }
