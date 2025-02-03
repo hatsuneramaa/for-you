@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
     <audio autoplay>
-      <source src="old love.mp3" type="audio/mp3">
+      <source src="old love.mp3" autoplay type="audio/mp3">
     </audio>
 <body>
     <div class="container">
@@ -19,17 +19,21 @@
         <div class="gif_container">
             <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
         </div>
-        <audio id="musik" src="old love.mp3" type="audio/mp3" autoplay></audio>
-
-        <button onclick="stopMusik()">Yes❤️</button>
-
-        <script>
-          function stopMusik() {
-            document.getElementById("musik").pause();
-            document.getElementById("musik").currentTime = 0;
-          }
-        </script>
-
+    <script>
+        function no(id){
+            var Yes❤️ = document.getElementById('btn_Yes❤️');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+Yes.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+        var audioPlaying = true;
+        function music(){
+            var audio = document.getElementById("bgMusic");
+            if (!audioPlaying) audio.play();
+            else audio.pause();
+            audioPlaying = !audioPlaying;
+        }
     </div>
     <script src="script.js"></script>
 </body>
