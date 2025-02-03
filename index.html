@@ -18,31 +18,30 @@
         </div>
 
         <!-- Audio element -->
-        <audio id="musik" src="old_love.mp3" type="audio/mp3"></audio>
+        <audio id="musik" src="old_love.mp3" type="audio/mp3" loop autoplay></audio>
     </div>
 
     <script>
-        // Variabel musik yang diinginkan
+        // Menyiapkan variabel musik
         var musik = "old_love.mp3";
-        var audio = new Audio(musik);
-        audio.loop = true;  // Memastikan musik berulang
-        audio.autoplay = true;  // Memulai musik otomatis
+        var audio = document.getElementById('musik');
 
-        // Fungsi untuk memulai musik saat halaman dimuat
+        // Fungsi untuk memulai musik otomatis saat halaman dimuat
         function mulai() {
+            // Cobalah untuk memutar musik saat halaman dimuat
             audio.play().catch(function(error) {
-                console.log("Autoplay gagal, perlu interaksi pengguna.");
-                // Tambahkan interaksi pengguna sebagai fallback
-                document.querySelector('.yes-button').addEventListener('click', function() {
-                    audio.play();
-                });
-                document.querySelector('.no-button').addEventListener('click', function() {
-                    audio.play();
+                // Jika autoplay gagal, kita akan memanggil interaksi fallback
+                console.log("Autoplay gagal, mencoba fallback");
+                // Kita tambahkan fallback untuk menunggu interaksi pengguna
+                document.body.addEventListener('click', function() {
+                    audio.play().catch(function(error) {
+                        console.log("Masih gagal memutar musik.");
+                    });
                 });
             });
         }
 
-        // Panggil fungsi mulai() ketika halaman dimuat
+        // Pastikan pemutaran musik dipanggil segera saat halaman dimuat
         window.onload = mulai;
 
         // Fungsi untuk menangani klik tombol Yes
