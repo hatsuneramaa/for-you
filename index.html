@@ -15,21 +15,48 @@
         </div>
         <div class="gif_container">
             <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
-       <audio id="musik" src="old_love.mp3" type="audio/mp3" autoplay>
-        </audio>
-     <script>
-      var musik = document.getElementById("musik");
-  
-        musik.play();
-      };
+        </div>
 
-        musik.pause();
-      };
+        <!-- Audio element -->
+        <audio id="musik" src="old_love.mp3" type="audio/mp3"></audio>
+    </div>
 
-        musik.pause();
-      };
+    <script>
+        // Variabel musik yang diinginkan
+        var musik = "old_love.mp3";
+        var audio = new Audio(musik);
+        audio.loop = true;  // Memastikan musik berulang
+        audio.autoplay = true;  // Memulai musik otomatis
+
+        // Fungsi untuk memulai musik saat halaman dimuat
+        function mulai() {
+            audio.play().catch(function(error) {
+                console.log("Autoplay gagal, perlu interaksi pengguna.");
+                // Tambahkan interaksi pengguna sebagai fallback
+                document.querySelector('.yes-button').addEventListener('click', function() {
+                    audio.play();
+                });
+                document.querySelector('.no-button').addEventListener('click', function() {
+                    audio.play();
+                });
+            });
+        }
+
+        // Panggil fungsi mulai() ketika halaman dimuat
+        window.onload = mulai;
+
+        // Fungsi untuk menangani klik tombol Yes
+        function handleYesClick() {
+            alert("You said Yes!");
+        }
+
+        // Fungsi untuk menangani klik tombol No
+        function handleNoClick() {
+            alert("You said No!");
+        }
     </script>
-</div>
+
+    <script> AOS.init({once: true, }); </script>
     <script src="script.js"></script>
 </body>
 </html>
