@@ -13,23 +13,35 @@
     <div class="container">
         <h1>Will You Be Mine?(੭˃ᴗ˂)੭</h1>
         <div class="buttons">
-            <button class="yes-button" onclick="handleYesClick()">Yes❤️</button>
-            <button class="no-button" onclick="handleNoClick()">No💔</button>
+            <button class="yes-button" onclick="handleYesClick()">Yes❤</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
         </div>
         <div class="gif_container">
             <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
         </div>
-        <audio id="musik" src="old love.mp3" type="audio/mp3" autoplay></audio>
-
-        <button onclick="stopMusik()">Yes❤️</button>
-
-        <script>
-          function stopMusik() {
-            document.getElementById("musik").pause();
-            document.getElementById("musik").currentTime = 0;
-          }
-        </script>
-
+         
+        <button id='btn_yes' onclick='Yes❤(this)' 
+        <audio autoplay>
+  <source src="old love.mp3" type="audio/mp3">
+</audio>
+  </body>
+    <script>
+        function No(id){
+            var Yes❤ = document.getElementById('btn_mau');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+Yes❤.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+        var audioPlaying = false;
+        function music(){
+            var audio = document.getElementById("bgMusic");
+            if (!audioPlaying) audio.play();
+            else audio.pause();
+            audioPlaying = !audioPlaying;
+        }
+    </script>
+</html>
     </div>
     <script src="script.js"></script>
 </body>
