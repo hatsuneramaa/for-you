@@ -21,12 +21,6 @@ function handleNoClick() {
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
 }
-    {
-  newBtn.addEventListener("click", () => {
-    window.location.href = "https://www.tiktok.com/@hatsunerama";
-  });
-});
-
 
 function handleYesClick() {
     window.location.href = "yes_page.html";
