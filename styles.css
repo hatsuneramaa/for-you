@@ -44,22 +44,3 @@ body {
   }
   
 
- .social-media {
-    display: flex;
-    justify-content: center;
-    margin-top: 70;
-  }
- .social-media a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10 20px;
-    border-radius: 5px;
-    margin: 0 10px;
-  }
-
-.tiktok-btn {
-    background-color: #ff0000;
-  }
-</style>
-
-
