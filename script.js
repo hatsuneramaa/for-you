@@ -16,12 +16,11 @@ let messageIndex = 0;
 function handleNoClick() {
     const noButton = document.querySelector('.no-button');
     const yesButton = document.querySelector('.yes-button');
-    const newBtn = document.querySelector(".new-btn");
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
-]
+}
     {
   newBtn.addEventListener("click", () => {
     window.location.href = "https://www.tiktok.com/@hatsunerama";
