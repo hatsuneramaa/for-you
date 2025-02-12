@@ -1,4 +1,3 @@
-const newBtn = document.querySelector(".new-btn");
 const messages = [
     "Are you sure?",
     "Really sure??😢",
@@ -17,6 +16,7 @@ let messageIndex = 0;
 function handleNoClick() {
     const noButton = document.querySelector('.no-button');
     const yesButton = document.querySelector('.yes-button');
+    const newBtn = document.querySelector(".new-btn");
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
