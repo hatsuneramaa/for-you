@@ -21,6 +21,7 @@ body {
   left: 50%;  /* Memindahkan teks ke tengah secara horizontal */
   transform: translateX(-50%);  /* Menggeser teks agar tepat di tengah */
   text-align: center;
+  white-space: nowrap;  
 }
 
 .gif_container img {
