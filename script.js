@@ -1,3 +1,4 @@
+const newBtn = document.querySelector(".new-btn");
 const messages = [
     "Are you sure?",
     "Really sure??😢",
