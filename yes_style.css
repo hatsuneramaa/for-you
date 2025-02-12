@@ -13,7 +13,7 @@ body {
 }
 
 .header_text {
-
+  font-size: 2.5em;
   color: #FFFFFF;
   position: absolute;
   top: 15%;  /* Menempatkan teks di bagian atas */
