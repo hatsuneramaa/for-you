@@ -17,8 +17,7 @@ body {
   font-size: 2.5em;
   color: #FFFFFF;
   position: absolute;
-  top: 10%;  /* Menempatkan teks di bagian atas */
-  bottom: 80%;  /* Menempatkan teks di bagian bawah */
+  bottom: 40%;  /* Menempatkan teks di bagian bawah */
   left: 50%;  /* Memindahkan teks ke tengah secara horizontal */
   transform: translateX(-50%);  /* Menggeser teks agar tepat di tengah */
   text-align: center;
