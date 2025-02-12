@@ -21,6 +21,24 @@ function handleNoClick() {
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
 }
+  }
+
+  yesBtn.style.display = "none";
+  noBtn.style.display = "none";
+  newBtn.style.display = "block";
+
+  // Menambahkan CSS untuk memastikan tombol berada di tengah
+  newBtn.style.position = "absolute";
+  newBtn.style.left = "50%";
+  newBtn.style.transform = "translateX(-50%)";
+  newBtn.style.top = "70%"; // Atur jarak dari atas
+  newBtn.style.bottom = "10"; // Atur jarak dari bawah
+ 
+  
+  newBtn.addEventListener("click", () => {
+    window.location.href = "https://www.tiktok.com/@hatsunerama";
+  });
+});
 
 
 function handleYesClick() {
