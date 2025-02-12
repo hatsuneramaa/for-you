@@ -16,11 +16,11 @@ body {
     font-size: 3em;
     color: #FFFFFF;
     position: absolute;
-  top: 15;  /* Menempatkan teks di bagian atas */
+  top: 30;  /* Menempatkan teks di bagian atas */
   bottom: 80%;  /* Menempatkan teks di bagian bawah */
   left: 50%;  /* Memindahkan teks ke tengah secara horizontal */
   transform: translateX(-50%);  /* Menggeser teks agar tepat di tengah */
-  font-size: 2rem;
+  font-size: 3em;
   text-align: center;
   transition: all 0.5s ease;
 }
